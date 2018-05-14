@@ -1,0 +1,51 @@
+.typography {
+	h1,h2,h3{
+		margin:15px 0px 30px;
+
+		@media screen and (max-width:$screen-xs-max) {
+			margin:10px 0px 20px;
+		}
+	}
+
+	h4,h5,h6{
+		margin:10px 0px 20px;
+
+		@media screen and (max-width:$screen-xs-max) {
+			margin:10px 0px;
+		}
+	}
+
+	p {
+		margin:15px 0px 25px;
+	}
+
+	ul,ol {
+		@extend p;
+	}
+
+	img {
+		margin:30px 0px;
+
+		&.alignleft {
+			margin-top:0px;
+			margin-right:30px;
+		}
+
+		&.alignright {
+			margin-top:0px;
+			margin-left:30px;
+		}
+	}
+
+	.wp-gallery {
+		margin:30px 0px;
+	}
+
+	> :first-child {
+		margin-top:0px;
+	}
+
+	> :last-child {
+		margin-bottom:0px;
+	}
+}
