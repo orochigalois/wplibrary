@@ -1,0 +1,10 @@
+.product{
+    width: 100%;
+    &::after{
+                
+        font-family: FontAwesome;
+        content: "\f002";
+        font-size:60px;
+        color:red;
+    }
+}
