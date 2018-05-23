@@ -60,8 +60,27 @@ jQuery(document).ready(function($){
         }
     })();
     $(window).resize(maybe_update_landing_height);
+
+
+    video_with_image_overlay();
+    
 });
 
 function is_mobile() {
     return window.matchMedia('(max-width:767px)').matches;
+}
+
+
+function video_with_image_overlay(){
+
+    var player;
+    var iframe;
+
+    iframe = jQuery('.video-container iframe')[0];
+    player = new Vimeo.Player(iframe);
+
+    jQuery('.video-container .video-overlay img').click(function(){
+        jQuery(this).parent().fadeOut();
+        player.play();
+    });
 }
