@@ -3,8 +3,14 @@ the_post();
 get_header(); 
 ?>
 
-<div class="container">
-	<?php the_content(); ?>
-</div>
+<?php
+
+while(have_rows('flexible_content')) {
+	the_row();
+
+	lp_theme_partial('/partials/flexible/' . get_row_layout() . '.php');
+}
+
+?>
 
 <?php get_footer(); ?>

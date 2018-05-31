@@ -1,0 +1,93 @@
+{
+    "key": "group_5b0fa2a805822",
+    "title": "Flexible Content",
+    "fields": [
+        {
+            "key": "field_5b0fa2d09a1c5",
+            "label": "Flexible Content",
+            "name": "flexible_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5b0fa2ea8fac1": {
+                    "key": "5b0fa2ea8fac1",
+                    "name": "youtube_video",
+                    "label": "youtube video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b0fa3009a1c6",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "Overlay",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5b0fa35d9a1c7",
+                            "label": "Video",
+                            "name": "video",
+                            "type": "oembed",
+                            "instructions": "Embed video",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1527751567
+}
